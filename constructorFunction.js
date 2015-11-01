@@ -1,9 +1,9 @@
 function Person(firstName, lastName) {
-    this.firstName = firstName;
-    this.lastName = lastName;
+  this.firstName = firstName;
+  this.lastName = lastName;
 }
 
-Person.prototype.greet = function (name) {
+Person.prototype.greet = function(name) {
   return "Hello, " + name + ". My name is " + this.firstName;
 };
 
