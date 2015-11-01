@@ -1,11 +1,13 @@
-function Person(firstName, lastName) {
+(function() {
+  function Person(firstName, lastName) {
     this.firstName = firstName;
     this.lastName = lastName;
 }
 
 Person.prototype.greet = function (name) {
-  return "Hello, " + name + ". My name is " + this.firstName;
+return "Hello, " + name + ". My name is " + this.firstName;
 };
+}());
 
 var obj = new Person("John", "Doe");
 var obj2 = new Person("Joe", "Smith");
